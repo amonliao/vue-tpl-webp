@@ -11,25 +11,26 @@
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-    <script>
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?d361836c2f08b7ed0f588fd60827a759";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
-      
-      (function(){
-        var domain=".zhangyuelicai.com";
-        if(location.href.indexOf("zydebug")!=-1||location.origin!="https://www"+domain){
-          var protocol=location.protocol;
-          var script = document.createElement("script");
-          script.type = "text/javascript";
-          script.src = (protocol=="https:"?"https://www"+domain:"http://dev"+domain)+"/h5/libs/js/vconsole.min.js";
-          document.getElementsByTagName("head")[0].appendChild(script);
-        }
-      })();
-    </script>
+    
   </body>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d361836c2f08b7ed0f588fd60827a759";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    
+    (function(){
+      var domain=".zhangyuelicai.com";
+      if(location.href.indexOf("zydebug")!=-1||location.origin!="https://www"+domain){
+        var protocol=location.protocol;
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = (protocol=="https:"?"https://www"+domain:"http://dev"+domain)+"/h5/libs/js/vconsole.min.js";
+        document.getElementsByTagName("head")[0].appendChild(script);
+      }
+    })();
+  </script>
 </html>
