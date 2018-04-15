@@ -27,6 +27,7 @@
   "dependencies": {
     "vue": "^2.5.2"{{#router}},
     "vue-router": "^3.0.1"{{/router}}{{#webp}},
+    "babel-preset-stage-0": "^6.24.1",
     "vt-image": "^0.1.8"{{/webp}}
   },
   "devDependencies": {
