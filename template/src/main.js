@@ -3,6 +3,16 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 {{/if_eq}}
 import Vue from 'vue'
+{{#webp}}
+import { Images, webpPlugin } from 'vt-image';
+// global install
+Vue.component('Images', Images);
+Vue.use(webpPlugin, {
+  formatWebp(url) {
+    return `${url}.webp`;
+  },
+});
+{{/webp}}
 import App from './App'
 {{#router}}
 import router from './router'

@@ -74,6 +74,11 @@ module.exports = {
       type: 'confirm',
       message: 'Install vue-router?',
     },
+    webp: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install webp?',
+    },
     lint: {
       when: 'isNotTest',
       type: 'confirm',
