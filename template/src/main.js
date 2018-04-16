@@ -4,14 +4,9 @@
 {{/if_eq}}
 import Vue from 'vue'
 {{#webp}}
-import { Images, webpPlugin } from 'vt-image';
+import Images from './components/vt-image/index';
 // global install
 Vue.component('Images', Images);
-Vue.use(webpPlugin, {
-  formatWebp(url) {
-    return `${url}.webp`;
-  },
-});
 {{/webp}}
 import App from './App'
 {{#router}}
