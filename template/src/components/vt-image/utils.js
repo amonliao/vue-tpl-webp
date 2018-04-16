@@ -22,7 +22,7 @@ export const isUrl = (url) => {
 }
 
 export const defaultWebpFormat = (url) => {
-  if(url.indexOf("data:image/png;base64")==-1)
+  if(url.indexOf("data:image/")==-1)
   return `${url}.webp`
   return url
 }
