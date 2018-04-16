@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    {{#webp}}
+    <Images :src="img" webp lazy/>
+    {{/webp}}
     {{#router}}
     <router-view/>
     {{else}}
@@ -14,11 +17,20 @@
 import HelloWorld from './components/HelloWorld'
 
 {{/unless}}
+{{#webp}}
+const img = require("./assets/logo.png");
+
+{{/webp}}
 export default {
   name: 'App'{{#router}}{{else}},
   components: {
     HelloWorld
-  }{{/router}}
+  }{{/router}}{{#webp}},
+  data() {
+    return {
+      img,
+    };
+  },{{/webp}}
 }
 </script>
 
